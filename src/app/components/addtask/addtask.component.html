@@ -1,0 +1,27 @@
+<div class="container">
+  <h1>Task add Form</h1>
+  <form #addDataForm="ngForm">
+    <div class="form-group">
+      <label for="taskName">Name</label>
+      <input type="text" id="taskName" placeholder="TaskName" class="form-control" [(ngModel)]="taskName" name="taskName"
+        required>
+    </div>
+
+    <div class="form-group">
+      <label for="assignedTo">Assigned To</label>
+      <input type="text" placeholder="assignedTo" class="form-control" [(ngModel)]="assignedTo" name="assignedTo">
+    </div>
+
+    <div class="form-group">
+      <label for="comments"> Comments </label><br>     
+      <textarea rows="4" cols="50" [(ngModel)]="comments" name="comments" class="form-comments"placeholder=" Please provide more detail ...">
+         Please provide more detail ...
+          </textarea>
+    </div>
+
+
+
+    <button type="submit" (click)="addTask()" class="btn btn-success">Submit</button>
+
+  </form>
+</div>

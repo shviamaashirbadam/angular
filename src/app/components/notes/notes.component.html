@@ -1,0 +1,32 @@
+<div class="Home">
+    <a routerLink="/navbar" routerLinkActive="active" class="glyphicon glyphicon-home">Home</a>
+</div>
+<div class="card">  
+  <h3 class="card-header text-center font-weight-bold text-uppercase py-4">DashBoard</h3>
+  <div class="card-body">
+    <div id="table" class="table-editable">      
+      <table class="table table-bordered table-responsive-md table-striped text-center">
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">TaskName</th>
+          <th scope="col">Assigned To</th>
+          <th scope="col">Comment</th>
+          <th scope="col">Status</th>
+          <th scope="col">Edit</th>
+          <th scope="col">Remove</th>
+        </tr>
+        <tr *ngFor="let obj of task">
+          <td>{{obj.taskId}}</td>
+          <td>{{obj.taskName}}</td>
+          <td>{{obj.assignedTo}}</td>
+          <td>{{obj.comments}}</td>
+          <td>{{obj.status}}</td>
+           <td> <span class="table-edit"><button type="button" class="btn btn-success btn-rounded btn-sm my-0">EDIT</button></span>
+           </td>
+           <td> <span class="table-edit"><button type="button" (click)="deleteTask(obj)" class="btn btn-danger btn-rounded btn-sm my-0">Remove</button></span>
+           </td>
+          </tr>
+      </table>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,15 @@
+button{
+    background-color: lightblue;
+    padding: 1%;    
+}
+.fontDisplay{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;    
+}
+.widearea{
+    background-color:lightgreen;  
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    padding: .5%;    
+    
+}

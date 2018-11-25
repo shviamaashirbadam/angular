@@ -1,0 +1,27 @@
+<h4> Welcome to Whiteboard!</h4>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<div class="LoginInfo">
+  
+  <form #loginForm="ngForm" novalidate>
+    
+    <div class="form-group">
+        <label for="username" >Username: </label>  
+        <div></div>
+        <input type="text" style="height:auto;width:auto;"  placeholder="username" required [(ngModel)]="username" name="username">
+      </div>
+    
+    <div class="form-group">
+      <label for="password" >  Password: </label>
+      <div> </div>
+       <input type="password" style="height:auto;width:auto;"  placeholder="Password" required [(ngModel)]="password" name="password">
+    </div>
+
+    <div class="form-group">     
+        <button type="submit" (click)="loginElkhorn()" class="btn btn-success" [disabled]="!loginForm.form.valid">Submit</button>
+    </div> 
+   
+  </form>
+</div>
+
+
