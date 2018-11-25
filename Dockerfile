@@ -25,10 +25,12 @@ WORKDIR /usr/src/app
 # Install app dependencies
 # A wildcard is used to ensure both package.json AND package-lock.json are copied
 # where available (npm@5+)
-COPY webapp/package*.json ./
+COPY angular/package*.json ./
 
 RUN npm install npm@v6.1.0
 RUN npm install -g @angular/cli@v6.0.8
+RUN npm install chart.js --save
+RUN npm install ng2-charts --save
 # If you are building your code for production
 # RUN npm install --only=production
 
