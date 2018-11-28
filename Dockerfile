@@ -38,4 +38,4 @@ RUN npm install ng2-charts --save
 COPY . .
 
 EXPOSE 4200
-CMD ng serve  --open 
+CMD ng serve --host 0.0.0.0
