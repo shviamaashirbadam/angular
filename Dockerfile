@@ -37,5 +37,5 @@ RUN npm install ng2-charts --save
 # Bundle app source
 COPY . .
 
-EXPOSE 8081
+EXPOSE 4200
 CMD ng serve  --open 
