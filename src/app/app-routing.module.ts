@@ -6,6 +6,8 @@ import { NavigationComponent } from './components/navigation/navigation.componen
 import { NotesComponent } from './components/notes/notes.component';
 import { AddtaskComponent } from './components/addtask/addtask.component';
 import { AboutmeComponent } from './aboutme/aboutme.component';
+import { AngularTutorialComponent } from './angular-tutorial/angular-tutorial.component';
+import { DevOpsComponent } from './dev-ops/dev-ops.component';
 
 
 
@@ -17,8 +19,6 @@ export const routes: Routes = [
   {path: 'java',component:AddtaskComponent},
   {path: 'hibernate',component:AddtaskComponent},
   {path: 'aboutme',component:AboutmeComponent}
- 
-  
    
 ]
 @NgModule({

@@ -16,6 +16,7 @@ export class NavigationComponent implements OnInit , DoCheck {
   ngOnInit() {
   }
 
+  //We need to check the LOgin ID here
   ngDoCheck() {
     this.loginId = sessionStorage.getItem('loginId');
   }
@@ -27,16 +28,20 @@ export class NavigationComponent implements OnInit , DoCheck {
   about(){
     this.router.navigate(['/aboutme']);
   }
-  taskList(){
-    this.router.navigate(['/notes']);
-  }
-  addTask(){
-    this.router.navigate(['/addtask']);
-  }
+  // taskList(){
+  //   this.router.navigate(['/notes']);
+  // }
+  // addTask(){
+  //   this.router.navigate(['/addtask']);
+  // }
   hibernate(){
     this.router.navigate(['/hibernate']);
   }
   java(){
     this.router.navigate(['/java']);
   }
+  angular(){
+    this.router.navigate(['/angular-tutorial']);
+  }
+
 }

@@ -1,8 +1,67 @@
-.info{
+.introduction {
    background: lightcyan;
-   font-display: inherit;
+   font-display: times;
    font-size: 15px;
-   padding-left: auto;
-   padding-right: auto;   
+   padding-left: 10px;
+   padding-right: auto; 
+   padding-top: 15px;  
+   text-align: left;
+   font-family: cursive;
+   font-style: oblique;
+}
+.Info{
+    text-align: center;
+    text-decoration: black;
+    font-style: oblique;
+    animation-name: example;
+    animation-duration: 20s;
+    font-size: 20px;
+}
+.bulletpoints{
+    background: lightyellow;
+    font-display: inherit;
+    font-size: 15px;
+    padding-left: 10px;
+    padding-right: auto; 
+    padding-top: 15px;  
+    text-align: left;
+    font-style: oblique;
+    font-size: 15px;
+}
+
+@keyframes example {
+    from {background-color:green;}
+    to {background-color:white;}
+    to{background-color:red;}
+}
+
+@keyframes example1 {
+    from {background-color:rgb(192, 202, 192);}
+    to {background-color:white;}
     
+}
+b{
+    animation-name: example1;
+    animation-duration: 20s;
+    animation-play-state: running;
+    animation-iteration-count: infinite;
+}
+
+@keyframes namebounce {
+    from {background-color:rgb(192, 202, 192);}
+    to {background-color:red;}        
+}
+
+.Quickplay{
+    animation-name: namebounce;
+    animation-direction: 1s;
+}
+
+.contact{
+    nav-down: auto;
+}
+.ShivamImage{
+ opacity: 0.5;
+ padding-left: 80%;
+ width: 100%;
 }

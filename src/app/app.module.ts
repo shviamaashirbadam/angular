@@ -21,6 +21,8 @@ import { AddtaskComponent } from './components/addtask/addtask.component';
 import { JavaComponent } from './java/java.component';
 import { HibernateComponent } from './hibernate/hibernate.component';
 import { AboutmeComponent } from './aboutme/aboutme.component';
+import { AngularTutorialComponent } from './angular-tutorial/angular-tutorial.component';
+import { DevOpsComponent } from './dev-ops/dev-ops.component';
 
 
 @NgModule({
@@ -33,6 +35,8 @@ import { AboutmeComponent } from './aboutme/aboutme.component';
     JavaComponent,
     HibernateComponent,
     AboutmeComponent,
+    AngularTutorialComponent,
+    DevOpsComponent,
     
   ],
   imports: [
