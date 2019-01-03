@@ -1,6 +1,7 @@
-button{
+.Buttons{
     background-color: lightblue;
-    padding: 1%;    
+    padding: 1%;  
+    position: fixed;      
 }
 .fontDisplay{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -13,3 +14,11 @@ button{
     padding: .5%;    
     
 }
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+  }
+  

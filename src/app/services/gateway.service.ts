@@ -16,6 +16,8 @@ export class GatewayService {
   private backendUrl = 'http://ec2-18-220-88-66.us-east-2.compute.amazonaws.com:8084';
 
   private backendUrlNote ='http://localhost:8085';
+
+  private Geodata = "https://raw.githubusercontent.com/johan/world.geo.json/master/countries.geo.json";
   
   
 

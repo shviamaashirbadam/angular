@@ -2,7 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { GatewayService } from './services/gateway.service';
 import { HttpClientModule } from '@angular/common/http';
-import {FormControl} from '@angular/forms'
+import {FormControl} from '@angular/forms';
 import { FormsModule } from '@angular/forms';
 
 
@@ -24,6 +24,14 @@ import { AboutmeComponent } from './aboutme/aboutme.component';
 import { AngularTutorialComponent } from './angular-tutorial/angular-tutorial.component';
 import { DevOpsComponent } from './dev-ops/dev-ops.component';
 
+// import {AccordionModule} from 'primeng/accordion';     //accordion and accordion tab
+// import {MenuItem} from 'primeng/api';                 //api
+// import {ButtonModule} from 'primeng/button';
+// import {ChipsModule} from 'primeng/chips';
+
+import { Ng6O2ChartModule } from 'ng6-o2-chart';
+
+import * as  ChartConst from 'ng6-o2-chart';
 
 @NgModule({
   declarations: [
@@ -46,7 +54,15 @@ import { DevOpsComponent } from './dev-ops/dev-ops.component';
     HttpClientModule,
     AppRoutingModule,
     FormsModule,
-    ChartsModule
+    ChartsModule,
+    Ng6O2ChartModule
+    
+    
+    // AccordionModule,
+    // ButtonModule,
+    // ChipsModule
+   
+
     
   ],
   providers: [GatewayService],
