@@ -9,6 +9,7 @@ import { AboutmeComponent } from './aboutme/aboutme.component';
 import { AngularTutorialComponent } from './angular-tutorial/angular-tutorial.component';
 import { DevOpsComponent } from './dev-ops/dev-ops.component';
 import { JavaComponent } from './java/java.component';
+import { AddContentComponent } from './add-content/add-content.component';
 
 
 
@@ -19,7 +20,8 @@ export const routes: Routes = [
   {path: 'addtask',component:AddtaskComponent},
   {path: 'java',component:JavaComponent},
   {path: 'hibernate',component:AddtaskComponent},
-  {path: 'aboutme',component:AboutmeComponent}
+  {path: 'aboutme',component:AboutmeComponent},
+  {path:'addcontent', component:AddContentComponent}
    
 ]
 @NgModule({

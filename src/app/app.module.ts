@@ -2,7 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { GatewayService } from './services/gateway.service';
 import { HttpClientModule } from '@angular/common/http';
-import {FormControl} from '@angular/forms';
+import { FormControl } from '@angular/forms';
 import { FormsModule } from '@angular/forms';
 
 
@@ -15,7 +15,7 @@ import { NotesComponent } from './components/notes/notes.component';
 
 import { ChartsModule } from 'ng2-charts/ng2-charts';
 
-import { catchError, map, tap,retry } from 'rxjs/operators'
+import { catchError, map, tap, retry } from 'rxjs/operators'
 import { error } from 'protractor';
 import { AddtaskComponent } from './components/addtask/addtask.component';
 import { JavaComponent } from './java/java.component';
@@ -24,14 +24,15 @@ import { AboutmeComponent } from './aboutme/aboutme.component';
 import { AngularTutorialComponent } from './angular-tutorial/angular-tutorial.component';
 import { DevOpsComponent } from './dev-ops/dev-ops.component';
 
-// import {AccordionModule} from 'primeng/accordion';     //accordion and accordion tab
-// import {MenuItem} from 'primeng/api';                 //api
-// import {ButtonModule} from 'primeng/button';
-// import {ChipsModule} from 'primeng/chips';
-
 import { Ng6O2ChartModule } from 'ng6-o2-chart';
 
 import * as  ChartConst from 'ng6-o2-chart';
+import { AddContentComponent } from './add-content/add-content.component';
+
+import {AccordionModule} from 'primeng/accordion';
+
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+
 
 @NgModule({
   declarations: [
@@ -45,7 +46,8 @@ import * as  ChartConst from 'ng6-o2-chart';
     AboutmeComponent,
     AngularTutorialComponent,
     DevOpsComponent,
-    
+    AddContentComponent,
+
   ],
   imports: [
     BrowserModule,
@@ -55,15 +57,13 @@ import * as  ChartConst from 'ng6-o2-chart';
     AppRoutingModule,
     FormsModule,
     ChartsModule,
-    Ng6O2ChartModule
-    
-    
-    // AccordionModule,
-    // ButtonModule,
-    // ChipsModule
-   
+    Ng6O2ChartModule,
+    AccordionModule,
+    BrowserAnimationsModule
 
-    
+
+
+
   ],
   providers: [GatewayService],
   bootstrap: [AppComponent]

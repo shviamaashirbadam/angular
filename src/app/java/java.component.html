@@ -1,51 +1,12 @@
-<p>
-  The question that everyone asks, what is Object Oriented programming?
-  Before answering the question we need to understand what is an Object.
-  If you google the keyword "object" the answer would be something like this:
-</p>
-<code>
-  ob·ject
-  noun  
-  1.
-  a material thing that can be seen and touched:
-  "he was dragging a large object"
-  synonyms:
-  thing, article, item, piece, device, ... moreantonyms:
-  abstract idea, notion
-  2.
-  a person or thing to which a specified action or feeling is directed:
-  "disease became the object of investigation"
-  synonyms:
-  target, butt, focus, recipient, victim
-  verb
-  
-  1.
-  say something to express one's disapproval of or disagreement with something:
-  "residents object to the volume of traffic"
-</code>
-
-<div> </div>
-<p>
-  So the Question is what is Object in the Programming world? How to create an Object in Java?
-  Per the definition above, Object is a material thing that can be seen or touched.
-  Per the definition, Object is something that we can see or feel.
-  But the question is,How can we see an object or touch in the programming world?
-  An object is how we define things in the programming world.
-  For example:
-  let's say someone ask you for the "Login" object.
-  Now, being a novice to programming you would think, what is "login" object.
-  There is no physical understanding of the "login" object unless you name someone "login", not "logan".
-  In the programming world, we define an object with its characteristics.
-  For any login, we need minimum two things
-  <li>1. username</li>
-  <li>2. password</li>
-  With the username and password under login, we created an object called login.
-  Let's see how this thing looks in Java code.
-  <code>
-    public class Account 
-     private int accountId;      
-     private String username;     
-     private String password;
-    
-  </code>
-</p>
+<div class="card">  
+    <h3 class="card-header text-center font-weight-bold text-uppercase py-4"> Java DashBoard</h3>
+    <div class="card-body">
+      </div>
+</div>
+<p-accordion *ngFor="let obj of listOfJavaQuestions">
+  <p-accordionTab header="{{obj.question}}">
+   <code>
+      {{obj.answer}}  
+   </code>      
+  </p-accordionTab>
+</p-accordion>
