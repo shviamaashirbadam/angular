@@ -1,6 +1,13 @@
-<p>
-  Let's play with Angular 
-</p>
-<p>
+<div class="card">
+    <h3 class="card-header text-center font-weight-bold text-uppercase py-4"> Angular DashBoard</h3>
+    <div class="card-body">
+    </div>
+  </div>
+  <p-accordion *ngFor="let obj of listOfQuestions">
+    <p-accordionTab header="{{obj.question}}">
   
-</p>
+      <pre>
+        {{obj.answer}}  
+     </pre>
+    </p-accordionTab>
+  </p-accordion>

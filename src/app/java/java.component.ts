@@ -23,24 +23,24 @@ export class JavaComponent {
   answer: string;
   demo: string;
   public addtutorial: Tutorial;
-  public listOfJavaQuestions: Tutorial[];
+  public listOfQuestions: Tutorial[];
 
 
   ngOnInit() {
-    this.dashBoard();
+    this.dashBoard("Java");
   }
 
   constructor(private gatewatservice: GatewayService, private router: Router) {
   }
 
 
-  dashBoard(): void {
-    this.gatewatservice.getListofTutorial().subscribe(
+  dashBoard(topic:string): void {
+    this.gatewatservice.getListofTutorial(topic).subscribe(
       (Test: Tutorial[]) => {
-        this.listOfJavaQuestions = Test;
+        this.listOfQuestions = Test;
         console.log(Test);
       },
-      error => console.log('error'));
+      error => console.log(`Error: ${error}`));
 
   }
 

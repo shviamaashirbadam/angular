@@ -26,28 +26,25 @@ export class GatewayService {
 
     const data: Tutorial = {
       id: 0,
-      topic: topic,
+      topic: topic,     
       question: question,
       answer: answer,
       demo: demo
-
     }
-    console.log("I am at post", topic);
+
     let headers = new HttpHeaders().set('Content-Type', 'application/json');
     let options = { headers: headers };
-    console.log("I am here");
 
     return this.httpClient.post<Tutorial>(`${this.backEndTutorial}/tutorial/create`, {
-      'topic': topic,
+      'topic': topic,     
       'question': question,
       'answer': answer,
       'demo': demo
     });
   }
 
-  public getListofTutorial(): Observable<Tutorial[]> {
-
-    return this.httpClient.get<Tutorial[]>(`${this.backEndTutorial}/tutorial/findall/topic`);
+  public getListofTutorial(topic:string): Observable<Tutorial[]> {
+    return this.httpClient.get<Tutorial[]>(`${this.backEndTutorial}/tutorial/findall/${topic}`);
   }
 
   public accountLogin(username: string, password: string): Observable<Login> {

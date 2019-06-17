@@ -6,9 +6,9 @@ import { Router } from '@angular/router';
   templateUrl: './navigation.component.html',
   styleUrls: ['./navigation.component.css']
 })
-export class NavigationComponent implements OnInit , DoCheck {
+export class NavigationComponent implements OnInit, DoCheck {
 
-  
+
   constructor(private router: Router) { }
 
   loginId: String;
@@ -16,32 +16,39 @@ export class NavigationComponent implements OnInit , DoCheck {
   ngOnInit() {
   }
 
-  //We need to check the LOgin ID here
+  login(){
+
+    this.router.navigate(['/login']);
+  }
+
   ngDoCheck() {
     this.loginId = sessionStorage.getItem('loginId');
   }
-  
+
+
   logout() {
     sessionStorage.clear();
     this.router.navigate(['']);
   }
-  about(){
+  about() {
     this.router.navigate(['/aboutme']);
   }
-  // taskList(){
-  //   this.router.navigate(['/notes']);
-  // }
-  // addTask(){
-  //   this.router.navigate(['/addtask']);
-  // }
-  hibernate(){
-    this.router.navigate(['/hibernate']);
-  }
-  java(){
+  java() {
     this.router.navigate(['/java']);
   }
-  angular(){
-    this.router.navigate(['/angular-tutorial']);
+  hibernate() {
+    this.router.navigate(['/hibernate']);
   }
+ 
+  angular() {
+    this.router.navigate(['/angular']);
+  }
+  addcontent() {
+    this.router.navigate(['/addcontent']);
+  }
+  devOps() {
+    this.router.navigate(['/DevOps']);
+  }
+  
 
 }

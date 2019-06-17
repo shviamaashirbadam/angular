@@ -32,6 +32,8 @@ import { AddContentComponent } from './add-content/add-content.component';
 import {AccordionModule} from 'primeng/accordion';
 
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import { HomeComponent } from './home/home.component';
+import {EditorModule} from 'primeng/editor';
 
 
 @NgModule({
@@ -47,6 +49,7 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
     AngularTutorialComponent,
     DevOpsComponent,
     AddContentComponent,
+    HomeComponent,
 
   ],
   imports: [
@@ -59,7 +62,8 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
     ChartsModule,
     Ng6O2ChartModule,
     AccordionModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    EditorModule
 
 
 

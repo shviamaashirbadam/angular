@@ -10,17 +10,20 @@ import { AngularTutorialComponent } from './angular-tutorial/angular-tutorial.co
 import { DevOpsComponent } from './dev-ops/dev-ops.component';
 import { JavaComponent } from './java/java.component';
 import { AddContentComponent } from './add-content/add-content.component';
+import { HomeComponent } from './home/home.component';
+import { HibernateComponent } from './hibernate/hibernate.component';
 
 
 
 export const routes: Routes = [
-  {path:'', component:LoginComponent},
+  {path:'', component:HomeComponent},
+  {path:'login', component:LoginComponent},
   {path: 'navbar', component: NavigationComponent},
-  {path: 'notes', component:NotesComponent},
-  {path: 'addtask',component:AddtaskComponent},
   {path: 'java',component:JavaComponent},
-  {path: 'hibernate',component:AddtaskComponent},
+  {path: 'hibernate',component:HibernateComponent},
   {path: 'aboutme',component:AboutmeComponent},
+  {path:'angular', component:AngularTutorialComponent},
+  {path:'DevOps', component:DevOpsComponent},
   {path:'addcontent', component:AddContentComponent}
    
 ]

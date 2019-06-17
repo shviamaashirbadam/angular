@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Tutorial } from '../models/tutorial';
 import { GatewayService } from '../services/gateway.service';
 import { Router } from '@angular/router';
+import {EditorModule} from 'primeng/editor';
 
 @Component({
   selector: 'app-add-content',
@@ -12,6 +13,7 @@ export class AddContentComponent implements OnInit {
 
   id: number;
   topic: string;
+  tag:Set<string>;
   question: string;
   answer: string;
   demo: string;

@@ -1,4 +1,14 @@
 <div class="navbar">
+    <div class="fontDisplay">
+        <button (click)='about()'>About Me</button>
+        <button (click)='java()'> Java</button>
+        <button (click)='hibernate()'> Hibernate</button>
+        <button (click)='angular()'> Angular</button>
+        <button (click)='devOps()'> DevOps</button>
+        <button (click)='addcontent()'>Add-Content</button>        
+        <button (click)='login()'>Login</button>
+
+    </div>
     <div class="fontDisplay" *ngIf="loginId">
         <button (click)='about()'>About Me</button>
         <button (click)='java()'> Java</button>
@@ -6,6 +16,5 @@
         <button (click)='Angular()'> Angular</button>
         <button (click)='logout()'>Logout</button>
         <button (click)='addcontent()'>Add-Content</button>
-        
     </div>
 </div>
